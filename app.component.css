@@ -1,0 +1,20 @@
+
+table, th, td {
+    border: 2px solid black;
+  }
+
+div{
+    color: seagreen;
+}
+h2{
+    color: rgb(185, 117, 117);
+    text-align: center;
+}
+h3{
+    color: rgb(110, 69, 207);
+    text-align: center;
+}
+
+body{
+    background-color: rgb(207, 198, 198);
+}
