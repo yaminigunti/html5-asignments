@@ -1,52 +1,23 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>proj04</title>
+  
 </head>
 <body>
-  <h2> {{messages}}</h2>
-<h3> Angular{{version}}Topics</h3>
+  Enter FirstNumber:
+  <input type="number"placeholder=" enter number"[(ngModel)]="FirstNumber"><br>
+  Enter SecondNumber:
+  <input type="number"placeholder=" enter number"[(ngModel)]="SecondNumber"><br>
+   enter your Result:
+  <input type="number"[(ngModel)]="Result"><br>
 
-<div>
-  Enter Topic:
-  <input type="text" placeholder ="topicname" #currentTopic/>
-  <button type="button" (click) ="addTopic(currentTopic.value)">Add</button>
-  <button type="button" (click) ="searchTopic(currentTopic.value)">Search</button>
-  <button type="button" (click) ="deleteTopic(currentTopic.value)">Delete</button>
-</div>
-<br> <br>
-<table>
-  <thead>
-    <tr>
-<td> Topic Id </td>
-<td>Topic Name </td>
-<td>Action </td>
-    </tr>
-  </thead>
-  <tbody>
-<tr *ngFor="let i=index; let topic of topics">
-  <td>
-    {{i+1}}
-  </td>
-  <td>
-    {{topic}}
-  </td>
-  <td>
-    <button type ="button" (click) ="deleteTopic(i)">Delete</button>
-  </td>
-</tr>
-  </tbody>
-<tfoot>
-  <tr>
-    <td colspan=3>no.of topics:{{topics.length}}</td>
-  </tr>
-</tfoot>
-
-</table>
-
+  <button (click) ="getAdd()">Add</button>
+  <button (click) ="getSub()">Sub</button>
+  <button (click) ="getMul()">Mul</button>
+  <button (click) ="getDiv()">Div</button>
+  
 </body>
 </html>
